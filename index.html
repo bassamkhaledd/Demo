@@ -3,17 +3,20 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Bassam Khaled | Frontend Developer</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <link rel="stylesheet" href="style.css" />
-   <header>
-  <div class="header-top">     
-    <div class="pulser"></div>
-    <h1>Bassam Khaled</h1>
-  </div>
-  <p>Frontend Developer</p>     
-</header>
+    <header>
+      <div class="header-top">
+        <div class="pulser"></div>
+        <h1>Bassam Khaled</h1>
+      </div>
+      <p class="subtitle">
+        Frontend Developer crafting responsive web experiences
+      </p>
+    </header>
+
     <nav>
       <ul>
         <li><a href="#about">About</a></li>
@@ -22,69 +25,84 @@
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
+
     <main>
-      <section id="about">
-        <h2>About Me</h2>
-        <img src="6923.jpg" alt="Profile Picture" />
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel
-          sapien eget nunc efficitur commodo. Sed at ligula a nunc efficitur
-          bibendum. Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          Necessitatibus, accusantium, culpa nostrum dicta consectetur nemo eum,
-          repellat aperiam ea repellendus numquam dolore quos vero tenetur
-          itaque nam quaerat corporis quia!
-        </p>
+      <section id="about" class="card">
+        <div class="section-heading">
+          <h2>About Me</h2>
+          <p>Building clean, accessible, and user-focused interfaces.</p>
+        </div>
+        <div class="about-content">
+          <img src="6923.jpg" alt="Illustrated profile avatar" />
+          <p>
+            I am a frontend developer passionate about turning ideas into
+            smooth, interactive experiences. I enjoy responsive design,
+            thoughtful UI details, and writing code that feels intuitive for
+            every user.
+          </p>
+        </div>
       </section>
-      <section id="projects">
+
+      <section id="projects" class="card">
         <h2>Projects</h2>
-        <ul>
-          <li>Project 1: A responsive website for a local business.</li>
-          <li>Project 2: A JavaScript game built with HTML5 canvas.</li>
-          <li>Project 3: A React application for managing tasks.</li>
+        <ul class="project-list">
+          <li>Responsive websites for small businesses and personal brands.</li>
+          <li>Interactive JavaScript games with polished visuals.</li>
+          <li>React apps focused on usability and performance.</li>
         </ul>
       </section>
-      <section id="education">
+
+      <section id="education" class="card">
         <h2>Education</h2>
-        <table border="1">
-          <tr>
-            <th>Year</th>
-            <th>Faculty</th>
-            <th>Graduation</th>
-          </tr>
-          <tr>
-            <td>2020</td>
-            <td>Computer Science</td>
-            <td>2024</td>
-          </tr>
+        <table>
+          <thead>
+            <tr>
+              <th>Year</th>
+              <th>Faculty</th>
+              <th>Graduation</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>2020</td>
+              <td>Computer Science</td>
+              <td>2024</td>
+            </tr>
+          </tbody>
         </table>
       </section>
-      <section id="contact">
+
+      <section id="contact" class="card">
         <h2>Contact Me</h2>
         <form>
-          <label for="name">Name:</label>
-          <input type="text" id="name" name="name" /><br /><br />
-          <label for="email">Email:</label>
-          <input type="email" id="email" name="email" required /><br /><br />
-          <label for="phone">Phone:</label>
-          <input type="tel" id="phone" name="phone" required /><br /><br />
-          <label for="subscribe">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" />
+
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="phone">Phone</label>
+          <input type="tel" id="phone" name="phone" required />
+
+          <label class="checkbox-row" for="subscribe">
             <input type="checkbox" id="subscribe" name="subscribe" />
-            Add me to the newsletter </label
-          ><br /><br />
-          <label for="message">Message:</label>
-          <br />
+            Add me to the newsletter
+          </label>
+
+          <label for="message">Message</label>
           <textarea
             id="message"
             name="message"
-            placeholder="Your Message"
+            placeholder="Your message"
           ></textarea>
-          <br /><br />
+
           <button type="submit">Submit</button>
         </form>
       </section>
     </main>
+
     <footer>
-      <p>&copy; 2024 Bassam Khaled. All rights reserved.</p>
+      <p>&copy; 2026 Bassam Khaled. All rights reserved.</p>
     </footer>
   </body>
 </html>
