@@ -1,0 +1,14 @@
+@use 'variables' as *;
+@mixin card {
+  background: $surface;
+  border: 1px solid $border;
+  border-radius: 16px;
+  padding: 1.25rem;
+  box-shadow: 0 12px 30px rgba(15, 23, 42, 0.08);
+}
+
+@mixin respond-to($bp) {
+  @media (min-width: map-get($breakpoints, $bp)) {
+    @content;
+  }
+}
